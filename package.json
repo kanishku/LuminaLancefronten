@@ -1,18 +1,22 @@
 {
   "name": "react-app",
+  "homepage": "https://kanishku.github.io/LuminaLanceproject/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^1.16.4",
     "@stripe/stripe-js": "^1.46.0",
     "@tanstack/react-query": "^5",
     "axios": "^1.3.3",
+    "gh-pages": "^6.1.1",
     "infinite-react-carousel": "^1.2.11",
     "moment": "^2.29.4",
     "react": "^18.2.0",
